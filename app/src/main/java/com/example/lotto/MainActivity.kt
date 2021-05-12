@@ -1,8 +1,10 @@
 package com.example.lotto
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.cardview.widget.CardView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,5 +12,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Toast.makeText(this, "MainActivity", Toast.LENGTH_LONG).show()
+
+        val openConsAct = findViewById<CardView>(R.id.gotoCons)
+
+        openConsAct.setOnClickListener{
+            startActivity(Intent(this@MainActivity, ConstellationActivity::class.java))
+        }
     }
 }
