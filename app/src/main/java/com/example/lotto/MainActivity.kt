@@ -14,9 +14,13 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, "MainActivity", Toast.LENGTH_LONG).show()
 
         val openConsAct = findViewById<CardView>(R.id.gotoCons)
+        val openNAme = findViewById<CardView>(R.id.gotoName)
 
         openConsAct.setOnClickListener{
             startActivity(Intent(this@MainActivity, ConstellationActivity::class.java))
+        }
+        openConsAct.setOnClickListener{
+            startActivity(Intent(this@MainActivity, NameActivity::class.java))
         }
     }
 }
