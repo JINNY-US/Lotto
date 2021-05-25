@@ -57,7 +57,7 @@
         app:layout_constraintGuide_percent="0.5" />
 
     <Button
-        android:id="@+id/btnGo"
+        android:id="@+id/btnGoName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -74,8 +74,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:text="뒤로가기"
-        app:layout_constraintBottom_toBottomOf="@+id/btnGo"
+        app:layout_constraintBottom_toBottomOf="@+id/btnGoName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/btnGo" />
+        app:layout_constraintTop_toTopOf="@+id/btnGoName" />
 </androidx.constraintlayout.widget.ConstraintLayout>
